@@ -11,7 +11,11 @@
         {
             "label": "apply hyprland config",
             "type": "shell",
-            "command": "./apply_hypr.sh"
+            "command": "./apply_hypr.sh",
+            "problemMatcher": [
+                "$tsc-watch"
+            ],
+            "isBackground": true
         }
     ]
 }
