@@ -11,7 +11,7 @@ local closeWindowBind = hl.bind(v.mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(v.mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 
--- Screen toggle 
+-- Screen toggle
 hl.bind(v.mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(v.mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(v.mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only

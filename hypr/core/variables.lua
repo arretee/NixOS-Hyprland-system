@@ -3,11 +3,11 @@ return {
 
     terminal = "kitty", -- Main terminal
 
-    fileManager = "dolphin", -- Main
+    fileManager = "dolphin", -- Main fileManager
 
-    menu = "wofi --show drun",
+    menu = "wofi --show drun", -- default menu 
 
-    waybar = "waybar",
+    waybar = "waybar", -- waybar 
 
-    browser = "firefox",
+    browser = "firefox", -- default browser
 }
