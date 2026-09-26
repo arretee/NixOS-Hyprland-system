@@ -9,6 +9,8 @@
   imports =
     [
       ./hardware-configuration.nix # Automatic hardware configuration 
+      ./imports/terminal.nix       # Terminal And Shell configuration
+      ./imports/window_manager.nix # Window manager configuration and packages 
     ];
 
   # ---------- Boot ----------
@@ -61,25 +63,6 @@
   
   boot.kernelParams = [ "nvidia-drm.modeset=1" "nvidia-drm.fbdev=1" ];
 
-  # ------------- Window Manager -------------
-  # Hyprland - Window manager
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
-  # Login Screen 
-  services.greetd = {
-    enable = true;
-    settings.default_session = {
-      command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --cmd Hyprland";
-      user = "greeter"; 
-    };
-  };
-
-
-
-
   # ---------------- Audio ------------------
   security.rtkit.enable = true;
   services.pipewire = {
@@ -99,32 +82,10 @@
 
   # --------------- Packages ---------------
   environment.systemPackages = with pkgs; [
-    # Basic things
-    vim
-    wget
-    git
-    htop
-    
-
-    # Hyprland essentials
-    kitty	# Terminal
-    wofi 	# App launcher
-    waybar	# Status bar
-    mako 	# Notifications
-    hyprpaper  	# Wallpaper
-    grim 	# Screenshots
-    slurp 	# Selecet screen area
-    wl-clipboard	# Clipboard tools
-
-    
-
     # Apps
     firefox 	# Main browser
-
     kdePackages.dolphin     # File manager
-
     vscode 	# Code Editor
-
     
     # Communication
     vesktop
@@ -133,14 +94,6 @@
  
  ];
  
-
-
-
-
-
-
-
-
 
   # -------------- Boot loader ------------
   boot.loader.systemd-boot.configurationLimit = 5; 
