@@ -4,11 +4,10 @@ require("core.binds")
 require("core.input")
 require("core.rule")
 require("core.appearance")
+require("core.env")
 
+require("apps.theme")
 
--- Cursore
-hl.env("XCURSOR_SIZE", "24")
-hl.env("HYPRCURSOR_SIZE", "24")
 
 
 -- Hyprland build in wallpapers

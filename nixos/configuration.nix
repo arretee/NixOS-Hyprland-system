@@ -84,7 +84,7 @@
   environment.systemPackages = with pkgs; [
     # Apps
     firefox 	# Main browser
-    kdePackages.dolphin     # File manager
+    thunar     # File manager
     vscode 	# Code Editor
     
     # Communication

@@ -21,3 +21,11 @@ The configuration is build for personal usage and as learning project as well.
     zsh             # Shell
 ```
 
+## Apps
+```
+    firefox 	# Main browser
+    thunar     # File manager
+    vscode 	# Code Editor
+```
+
+
