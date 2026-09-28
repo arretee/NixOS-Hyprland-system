@@ -35,6 +35,11 @@
 
     zip unzip p7zip unrar
 
+    # ------------------ Bash scripting tools ----------------
+    inotify-tools
+    killall
+
+
 
     # ------------------ dev tools ------------------
     git 
