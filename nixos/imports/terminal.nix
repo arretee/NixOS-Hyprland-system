@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  # Configure shell
+  # Configure shell to zsh
   users.defaultUserShell = pkgs.zsh; # Main shell -> ZSH
 
   # zsh configuration
@@ -31,9 +31,11 @@
 
     # ------------------ Commands ------------------
     fd      # find replacment
+    ripgrep # grep replacment
+    zoxide  # command to replace an cd
 
 
-    zip unzip p7zip unrar
+    zip unzip p7zip unrar # Zippers and unzipers
 
     # ------------------ Bash scripting tools ----------------
     inotify-tools
