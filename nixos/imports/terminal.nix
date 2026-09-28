@@ -22,6 +22,7 @@
 
     # ------------------ Monitoring / visual tools ------------------
     htop    # Htop for resources monitoring
+    btop    # Btop -> more modern resuorces monitring
 
 
     tree    
