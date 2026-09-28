@@ -7,6 +7,7 @@ require("core.appearance")
 require("core.env")
 
 require("apps.theme")
+require("apps.waybar")
 
 
 
