@@ -3,8 +3,12 @@
 # Needed paths for script
 PROJECT_DIR=$1
 
-WAYBAR_PROJECT_DIR=$PROJECT_DIR/apps/waybar
+# Host name
+HOST_NAME=$3
+
+WAYBAR_PROJECT_DIR="$PROJECT_DIR/apps/waybar/$HOST_NAME"
 WAYBAR_SYSTEM_DIR=$2
+
 
 
 # Include logger

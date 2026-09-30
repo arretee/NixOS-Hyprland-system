@@ -1,0 +1,38 @@
+/* ---------- Base (dark blues) ---------- */
+@define-color bg               rgba(7, 13, 26, 1);      /* #070D1A */
+@define-color surface          rgba(12, 21, 40, 1);     /* #0C1528 */
+@define-color surface_raised   rgba(18, 30, 56, 1);     /* #121E38 */
+@define-color surface_hover    rgba(26, 42, 77, 1);     /* #1A2A4D */
+@define-color border_color     rgba(37, 58, 102, 1);    /* #253A66 */
+@define-color border_strong    rgba(53, 82, 143, 1);    /* #35528F */
+
+/* ---------- Text ---------- */
+@define-color text             rgba(234, 241, 255, 1);  /* #EAF1FF */
+@define-color text_muted       rgba(147, 166, 201, 1);  /* #93A6C9 */
+@define-color text_dim         rgba(95, 114, 153, 1);   /* #5F7299 */
+
+/* ---------- Active blue ---------- */
+@define-color active           rgba(47, 129, 247, 1);   /* #2F81F7 */
+@define-color active_hover     rgba(81, 153, 255, 1);   /* #5199FF */
+@define-color active_pressed   rgba(31, 106, 224, 1);   /* #1F6AE0 */
+@define-color active_bg        rgba(47, 129, 247, 0.15);
+@define-color active_hover_bg  rgba(47, 129, 247, 0.10);
+@define-color focus_ring       rgba(47, 129, 247, 0.40);
+@define-color glow             rgba(47, 129, 247, 0.30);
+
+/* ---------- Status ---------- */
+@define-color success          rgba(46, 204, 143, 1);   /* #2ECC8F */
+@define-color warning          rgba(245, 185, 62, 1);   /* #F5B93E */
+@define-color error            rgba(242, 100, 90, 1);   /* #F2645A */
+@define-color info             rgba(56, 189, 248, 1);   /* #38BDF8 */
+
+/* ---------- Status backgrounds (15%) ---------- */
+@define-color success_bg       rgba(46, 204, 143, 0.15);
+@define-color warning_bg       rgba(245, 185, 62, 0.15);
+@define-color error_bg         rgba(242, 100, 90, 0.15);
+@define-color info_bg          rgba(56, 189, 248, 0.15);
+
+/* ---------- Overlays ---------- */
+@define-color backdrop         rgba(7, 13, 26, 0.80);
+@define-color glass            rgba(12, 21, 40, 0.70);
+@define-color transparent      rgba(0, 0, 0, 0);

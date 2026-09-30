@@ -1,0 +1,85 @@
+[
+    {
+        "name": "main",
+        "output": "DP-3",
+        // --------------------- Waybar configuration ---------------------
+        "layer": "top",
+        "position": "top",
+        "fixed-center": true,
+        "margin": 5,
+        // --------------------- Modules defenitions ---------------------
+        "modules-left": [
+            "wlr/taskbar",
+        ],
+        "modules-center": [
+            "hyprland/workspaces",
+        ],
+        "modules-right": [
+            "wireplumber",
+            "hyprland/language",
+            "clock",
+        ],
+        // --------------------- Modules configuration (left to right) ---------------------
+        "wrl/taskbar": {},
+        "hyprland/workspaces": {},
+        "wireplumber": {
+            "format": "{volume}% {icon}",
+            "format-muted": "󰅶",
+            "format-icons": ["", "", ""],
+            "scroll-step": 5
+        },
+        "hyprland/language": {
+            "format": ": {}",
+            "format-en": "US",
+            "format-ru": "RU",
+        },
+        "clock": {
+            "format": "{:%H:%M:%S} ",
+            "interval": 1,
+        },
+    },
+    // --------------------- Left monitor ---------------------
+    {
+        "name": "left",
+        "output": "DP-2",
+        // --------------------- Waybar configuration ---------------------
+        "layer": "top",
+        "position": "top",
+        "fixed-center": true,
+        "margin": 5,
+
+        "modules-left": [
+            "wlr/taskbar",
+        ],
+        "modules-center": [
+            "hyprland/workspaces",
+        ],
+        "modules-right": [
+            "wireplumber",
+            "hyprland/language",
+            "clock",
+        ],
+    },
+    // --------------------- Right monitor ---------------------
+    {
+        "name": "right",
+        "output": "HDMI-A-2",
+        // --------------------- Waybar configuration ---------------------
+        "layer": "top",
+        "position": "top",
+        "fixed-center": true,
+        "margin": 5,
+
+        "modules-left": [
+            "wlr/taskbar",
+        ],
+        "modules-center": [
+            "hyprland/workspaces",
+        ],
+        "modules-right": [
+            "wireplumber",
+            "hyprland/language",
+            "clock",
+        ],
+    }
+]

@@ -14,15 +14,32 @@ cp "${PROJECT_DIR}/hyprland.lua" "${HYPR_PATH}/hyprland.lua"
 info "Copy hyprland.lua"
 
 
-# Copy core part
-sub_title "Setup core part hyprland config"
+# Create core dir
+sub_title "Creating core dir"
 mkdir -p "${HYPR_PATH}/core"
 info "Created core dir"
+
+# Copy files that for every host
+sub_title "Copy files from core part"
 for file in ${PROJECT_DIR}/core/*; do
-    file_name=$(basename ${file})
-    cp ${PROJECT_DIR}/core/${file_name} "${HYPR_PATH}/core/${file_name}"
-    info "file copied: ${file_name}"
+    if [[ -f "$file" ]]; then
+        file_name=$(basename ${file})
+        cp ${PROJECT_DIR}/core/${file_name} "${HYPR_PATH}/core/${file_name}"
+        info "file copied: ${file_name}"
+    fi
 done
+
+# Copy files from hostname 
+sub_title "Copy files from core part by hostname"
+for file in ${PROJECT_DIR}/core/${HOST_NAME}/*; do
+    if [[ -f "$file" ]]; then
+        file_name=$(basename ${file})
+        cp ${PROJECT_DIR}/core/${HOST_NAME}/${file_name} "${HYPR_PATH}/core/${file_name}"
+        info "file copied: ${file_name}"
+    fi
+done
+
+
 
 # Copy scripts part
 sub_title "Setup scripts part hyprland config"
