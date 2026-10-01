@@ -81,17 +81,8 @@
 
 
   # --------------- Packages ---------------
-  environment.systemPackages = with pkgs; [
-    # Apps
-    firefox 	# Main browser
+  environment.systemPackages = with pkgs; [    
     thunar     # File manager
-    vscode 	# Code Editor
-    
-    # Communication
-    vesktop
-    telegram-desktop
-    
- 
  ];
  
 
