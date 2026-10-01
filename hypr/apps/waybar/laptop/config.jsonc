@@ -1,1 +1,10 @@
-// TODO
+{
+    "layer": "top",
+    "position": "top",
+    "fixed-center": true,
+    "margin": 5,
+
+    "modules-left": ["tray", "wlr/taskbar"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["wireplumber", "hyprland/language", "clock"],
+}
