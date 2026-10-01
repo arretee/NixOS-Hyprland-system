@@ -1,4 +1,5 @@
 @import url("../hypr/colors.css");
+@import url("custom_style.css")
 
 * {
     font-family: 'JetBrainsMono Nerd Font Propo';
@@ -50,49 +51,6 @@ window#waybar #workspaces button.active{
 window#waybar #workspaces button:hover{
     background: alpha(@active_hover, 0.7);
 }
-/* wireplumber */
-/* language */
-/* clock */
-
-/* ------------- Main monitor configuration - changes ------------- */
-
-
-/* ------------- Left monitor configuration - changes ------------- */
-window#waybar.left {
-}
-
-window#waybar #tray,
-window#waybar.left #clock, 
-window#waybar.left #language,
-window#waybar.left #wireplumber, 
-window#waybar.left #workspaces,
-window#waybar.left #taskbar{ 
-    font-size: 15px;
-    color: @text; 
-}
-
-/* taskbar */
-/* workspaces */
-/* wireplumber */
-/* language */
-/* clock */
-
-/* ------------- Right monitor configuration - changes ------------- */
-window#waybar.right {
-}
-
-window#waybar #tray,
-window#waybar.right #clock, 
-window#waybar.right #language,
-window#waybar.right #wireplumber, 
-window#waybar.right #workspaces,
-window#waybar.right #taskbar{ 
-    font-size: 15px;
-    color: @text; 
-}
-
-/* taskbar */
-/* workspaces */
 /* wireplumber */
 /* language */
 /* clock */
