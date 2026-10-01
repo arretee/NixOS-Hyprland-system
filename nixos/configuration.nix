@@ -11,6 +11,7 @@
       ./hardware-configuration.nix # Automatic hardware configuration 
       ./imports/terminal.nix       # Terminal And Shell configuration
       ./imports/window_manager.nix # Window manager configuration and packages 
+      ./imports/apps.nix           # apps for configuration -> browser, communication and more
     ];
 
   # ---------- Boot ----------

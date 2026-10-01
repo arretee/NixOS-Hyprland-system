@@ -12,5 +12,8 @@
     # Gaminng 
     steam
     lutris
-  ]
+  ];
+
+
+  programs.steam.enable = true;
 }

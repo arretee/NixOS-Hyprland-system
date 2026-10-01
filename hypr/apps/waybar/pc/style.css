@@ -12,7 +12,7 @@ window#waybar {
     border-radius: 15px;
     border: 1px solid alpha(@border_color, 0.3);
 }
-
+window#waybar #tray,
 window#waybar #clock, 
 window#waybar #language,
 window#waybar #wireplumber, 
@@ -34,7 +34,9 @@ window#waybar #taskbar{
     color: @text; 
 }
 
-
+/* tray */
+window#waybar #tray{
+}
 /* taskbar */
 /* workspaces */
 window#waybar #workspaces {
@@ -53,16 +55,13 @@ window#waybar #workspaces button:hover{
 /* clock */
 
 /* ------------- Main monitor configuration - changes ------------- */
-/* taskbar */
-/* workspaces */
-/* wireplumber */
-/* language */
-/* clock */
+
 
 /* ------------- Left monitor configuration - changes ------------- */
 window#waybar.left {
 }
 
+window#waybar #tray,
 window#waybar.left #clock, 
 window#waybar.left #language,
 window#waybar.left #wireplumber, 
@@ -82,6 +81,7 @@ window#waybar.left #taskbar{
 window#waybar.right {
 }
 
+window#waybar #tray,
 window#waybar.right #clock, 
 window#waybar.right #language,
 window#waybar.right #wireplumber, 

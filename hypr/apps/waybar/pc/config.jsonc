@@ -10,6 +10,8 @@
 
         // --------------------- Modules defenitions ---------------------
         "modules-left": [
+            "tray",
+
             "wlr/taskbar",
         ],
         "modules-center": [
@@ -21,6 +23,11 @@
             "clock",
         ],
         // --------------------- Modules configuration (left to right) ---------------------
+        "tray": {
+            "icon-size": 25,
+            "spacing": 20,
+        },
+
         "wrl/taskbar": {
             "format": "{icon}",
             "icon_size": 14,
