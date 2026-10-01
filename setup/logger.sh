@@ -12,6 +12,7 @@ info() {
     echo -e "${BLUE}[INFO]${RESET} $1"
 }
 
+
 success() {
     echo
     echo -e "${GREEN}[ OK ]${RESET} $1"
