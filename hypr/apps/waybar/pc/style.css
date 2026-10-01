@@ -1,45 +1,98 @@
 @import url("../hypr/colors.css");
 
 * {
-    border: none;
-    border-radius: 0;
     font-family: 'JetBrainsMono Nerd Font Propo';
-    font-size: 13px;
     min-height: 0;
-    margin: 2px;
 }
 
 
-/* ------------- Main monitor configuration ------------- */
-window#waybar.main {
+window#waybar {
     background: alpha(@bg, 0.5);
 
-    border-radius: 25px;
+    border-radius: 15px;
+    border: 1px solid alpha(@border_color, 0.3);
 }
 
-window#waybar.main #clock {
-    padding: 0 15px;
-    background-color: alpha(@surface_hover, 0.7);
-    border-radius: 25px;
+window#waybar #clock, 
+window#waybar #language,
+window#waybar #wireplumber, 
+window#waybar #workspaces,
+window#waybar #taskbar{
+    background-color: alpha(@surface_hover, 0.5);
+
+    padding: 0px 10px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+
+    border-radius: 10px;
 
     font-size: 20px;
     color: @text; 
 }
 
-window#waybar.main #language {
-    padding: 0 15px;
-    background-color: alpha(@surface_hover, 0.7);
-    border-radius: 25px;
 
-    font-size: 20px;
+/* taskbar */
+/* workspaces */
+window#waybar #workspaces {
+    padding: 5px 5px;
+}
+
+window#waybar #workspaces button.active{
+    background: alpha(@active_bg, 0.7);
+}
+
+window#waybar #workspaces button:hover{
+    background: alpha(@active_hover, 0.7);
+}
+/* wireplumber */
+/* language */
+/* clock */
+
+/* ------------- Main monitor configuration - changes ------------- */
+/* taskbar */
+/* workspaces */
+/* wireplumber */
+/* language */
+/* clock */
+
+/* ------------- Left monitor configuration - changes ------------- */
+window#waybar.left {
+}
+
+window#waybar.left #clock, 
+window#waybar.left #language,
+window#waybar.left #wireplumber, 
+window#waybar.left #workspaces,
+window#waybar.left #taskbar{ 
+    font-size: 15px;
     color: @text; 
 }
 
-window#waybar.main #wireplumber {
-    padding: 0 15px;
-    background-color: alpha(@surface_hover, 0.7);
-    border-radius: 25px;
+/* taskbar */
+/* workspaces */
+/* wireplumber */
+/* language */
+/* clock */
 
-    font-size: 20px;
+/* ------------- Right monitor configuration - changes ------------- */
+window#waybar.right {
+}
+
+window#waybar.right #clock, 
+window#waybar.right #language,
+window#waybar.right #wireplumber, 
+window#waybar.right #workspaces,
+window#waybar.right #taskbar{ 
+    font-size: 15px;
     color: @text; 
 }
+
+/* taskbar */
+/* workspaces */
+/* wireplumber */
+/* language */
+/* clock */

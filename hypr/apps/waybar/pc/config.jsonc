@@ -7,6 +7,7 @@
         "position": "top",
         "fixed-center": true,
         "margin": 5,
+
         // --------------------- Modules defenitions ---------------------
         "modules-left": [
             "wlr/taskbar",
@@ -20,8 +21,17 @@
             "clock",
         ],
         // --------------------- Modules configuration (left to right) ---------------------
-        "wrl/taskbar": {},
-        "hyprland/workspaces": {},
+        "wrl/taskbar": {
+            "format": "{icon}",
+            "icon_size": 14,
+            "icon_theme": "Numix-Circle",
+            "tooltip-format": "{title}",
+        },
+
+        "hyprland/workspaces": {
+            "format": "{name}",
+        },
+
         "wireplumber": {
             "format": "{volume}% {icon}",
             "format-muted": "󰅶",
@@ -29,7 +39,7 @@
             "scroll-step": 5
         },
         "hyprland/language": {
-            "format": ": {}",
+            "format": "{}",
             "format-en": "US",
             "format-ru": "RU",
         },
