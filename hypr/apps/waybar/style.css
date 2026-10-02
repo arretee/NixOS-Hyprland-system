@@ -1,5 +1,5 @@
 @import url("../hypr/colors.css");
-@import url("custom_style.css")
+@import url("custom_style.css");
 
 * {
     font-family: 'JetBrainsMono Nerd Font Propo';
@@ -18,7 +18,10 @@ window#waybar #clock,
 window#waybar #language,
 window#waybar #wireplumber, 
 window#waybar #workspaces,
-window#waybar #taskbar{
+window#waybar #taskbar,
+window#waybar #bluetooth,
+window#waybar #battery,
+window#waybar #network{
     background-color: alpha(@surface_hover, 0.5);
 
     padding: 0px 10px;
@@ -39,6 +42,9 @@ window#waybar #taskbar{
 window#waybar #tray{
 }
 /* taskbar */
+window#waybar #taskbar button.active{
+    background: alpha(@active_bg, 0.7);
+}
 /* workspaces */
 window#waybar #workspaces {
     padding: 5px 5px;

@@ -6,5 +6,42 @@
 
     "modules-left": ["tray", "wlr/taskbar"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["wireplumber", "hyprland/language", "clock"],
+    "modules-right": ["wireplumber", "hyprland/language", "network", "bluetooth", "battery", "clock"],
+
+    "tray": {
+        "icon-size": 25,
+        "spacing": 20,
+    },
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 30,
+        "icon-theme": "Papirus-Dark",
+    },
+
+    "hyprland/workspaces": {},
+
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "󰅶",
+        "format-icons": ["", "", ""],
+        "scroll-step": 5
+    },
+
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "US",
+        "format-ru": "RU",
+    },
+
+    "network": {},
+
+    "bluetooth": {},
+
+    "battery": {},
+    
+    "clock": {
+        "format": "{:%H:%M:%S} ",
+        "interval": 1,
+    },
 }
