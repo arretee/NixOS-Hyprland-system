@@ -65,7 +65,6 @@
 
   # --------------- Packages ---------------
   environment.systemPackages = with pkgs; [    
-    thunar     # File manager
  ];
  
 

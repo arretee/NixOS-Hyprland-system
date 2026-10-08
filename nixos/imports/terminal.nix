@@ -19,7 +19,9 @@
     # ------------------ settings tools ------------------
     xrandr  # Monitors settigns tool
 
-
+    hyprpolkitagent
+    
+    
     # ------------------ Monitoring / visual tools ------------------
     htop    # Htop for resources monitoring
     btop    # Btop -> more modern resuorces monitring
@@ -46,6 +48,7 @@
     # ------------------ dev tools ------------------
     git 
     vim
+    neovim
 
 
     python3
