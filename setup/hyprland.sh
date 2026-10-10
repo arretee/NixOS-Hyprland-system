@@ -28,37 +28,40 @@ info "Copy color configuration for system"
 copy_file "$HYPR_PROJECT/colors.css" "$HYPR_SYSTEM/colors.css"
 echo
 
-# Create core folder 
+# Hyprpaper + wallpapers configuration
+info "Create wallpapers folder"
+create_folder "$HYPR_SYSTEM/wallpapers"
+
+info "Copy wallpapers into wallpapers folder"
+copy_files "$HYPR_PROJECT/wallpapers" "$HYPR_SYSTEM/wallpapers"
+
+info "Copy hyprpaper configuration"
+copy_file "$HYPR_PROJECT/hyprpaper.conf" "$HYPR_SYSTEM/hyprpaper.conf"
+echo
+
+# hypr/core folder configuration
 info "Create core folder in hyprland folder"
 create_folder "$HYPR_SYSTEM/core"
-echo 
 
-# Copy core general files
 info "Copy hypr core general files"
 copy_files "$HYPR_PROJECT/core" "$HYPR_SYSTEM/core"
-echo 
 
-# Copy core hostnames files
 info "Copy hypr core hostname files"
 copy_files "$HYPR_PROJECT/core/$HOST_NAME" "$HYPR_SYSTEM/core"
 echo 
 
-# Create apps folder
+# hypr/apps folder configuration
 info "Create apps folder in hyprland folder"
 create_folder "$HYPR_SYSTEM/apps"
-echo
 
-# Copy apps general files
 info "Copy hypr apps general files"
 copy_files "$HYPR_PROJECT/apps" "$HYPR_SYSTEM/apps"
 echo 
 
-# Create scripts folder
+# hypr/scripts folder configuration
 info "Create scripts folder in hyprland folder"
 create_folder "$HYPR_SYSTEM/scripts"
-echo
 
-# Copy scripts general files
 info "Copy hypr scripts general files"
 copy_files "$HYPR_PROJECT/scripts" "$HYPR_SYSTEM/scripts"
 echo 
